@@ -1,0 +1,16 @@
+/*
+ * 
+ * This file contains a list of test scenarios for mobile automation.
+ * 
+ * Scenarios:
+ * 1. Login with user name and password
+ *    - Test login functionality with valid and invalid credentials.
+ * 2. Product is successfully added to the cart
+ *    - Verify that a product can be added to the cart.
+ * 3. Total price of 2 or more products in cart
+ *    - Ensure that the total price is correctly calculated when at least two products are added to the cart.
+ * 4. Sorting
+ *    - Test the sorting functionality in both ascending and descending order.
+ * 5. Checkout process
+ *    - Validate the entire checkout process.
+ */

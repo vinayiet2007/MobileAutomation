@@ -1,0 +1,5 @@
+node_modules
+apps/*
+package-lock.json
+.DS_Store
+logs/wdio-appium.log
