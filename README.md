@@ -56,7 +56,7 @@ IOS + APPIUM + ANDROID + JAVASCRIPT + XCODE + WDIO
         "platformName": "iOS",
         "appium:platformVersion": "18.2",
         "appium:deviceName": "iPhone 14 Pro",
-        "appium:app": "/Users/vinaysrivastava/Repo/MobileAutomation/apps/ios/Payload/MyDemoApp.app",
+        "appium:app": "<your app Path>/MyDemoApp.app",
         "appium:automationName": "XCUITest"
     }
     ```
