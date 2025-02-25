@@ -3,14 +3,6 @@ const helper = require('./helper.page');
 
 class CartPage{
 
-    // get totalPrice(){
-    //     return $('//XCUIElementTypeStaticText[contains(@value,"Total")]//following-sibling::XCUIElementTypeStaticText[contains(@value,"$")]');
-    // }
-
-    // get totalItems(){
-    //     return $('//XCUIElementTypeStaticText[contains(@value,"Total")]//following-sibling::XCUIElementTypeStaticText[contains(@value,"Items")]');
-    // }
-
     async getTotalPrice(){
         const totalPrice = await helper.fetchElement("totalPrice");
         await totalPrice.waitForExist({ timeout: 2000 });

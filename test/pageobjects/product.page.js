@@ -8,21 +8,6 @@ class ProductPage {
     /**
      * define selectors using getter methods
      */
-    // get pageTitle () {
-    //     return $('//XCUIElementTypeStaticText[@name="title"]');
-    // }
-
-    // get price(){
-    //     return $('//XCUIElementTypeStaticText[@name="Price"]');
-    // }
-
-    // async product(productName){
-    //     return $(`//XCUIElementTypeStaticText[@name="Product Name" and @label="${productName}"]`);
-    // }
-
-    // get addProductToCartButton(){
-    //     return $('//XCUIElementTypeStaticText[@name="Add To Cart"]');
-    // }
 
     async getPageTitle () {
         const productPageTitle = await helper.fetchElement("productPageTitle");

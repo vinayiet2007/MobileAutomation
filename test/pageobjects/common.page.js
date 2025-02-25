@@ -9,18 +9,6 @@ class CommonPage {
      * define selectors using getter methods
      */
 
-    // get menu () {
-    //     return $('');
-    // }
-
-    // get cartPage(){
-    //     return $('//XCUIElementTypeButton[@name="Cart-tab-item"]');
-    // }
-
-    // get catalog(){
-    //     return $('//XCUIElementTypeButton[@name="Catalog-tab-item"]');
-    // }
-
     async openCatalogPage(){
         const catalogPage = await helper.fetchElement("catalogMenu");
         await catalogPage.click();
