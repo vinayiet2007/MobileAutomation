@@ -2,13 +2,6 @@ const productPage = require("../pageobjects/product.page");
 const commonPage = require("../pageobjects/common.page");
 const cartPage = require("../pageobjects/cart.page");
 
-// Test case: Add item to cart
-// Test steps:
-// 1. Open the app
-// 2. Click on the product
-// 3. Click on Add to cart button
-// 4. Click on Cart icon
-// 5. Verify that the item is added to the cart
 describe("My First Test", () => {
     beforeEach(async() => {
         await commonPage.openCatalogPage();

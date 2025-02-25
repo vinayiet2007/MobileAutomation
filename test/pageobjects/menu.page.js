@@ -1,4 +1,5 @@
 const { $ } = require('@wdio/globals');
+const helper = require('./helper.page');
 
 class MenuPage {
 
@@ -7,9 +8,9 @@ class MenuPage {
     }
 
     async openLoginPage(){
-        const loginButton = this.loginPage;
-        await loginButton.waitForExist({ timeout: 5000 });
-        await loginButton.click();
+        const loginPage= await helper.fetchElement("loginMenu");
+        await loginPage.waitForExist({ timeout: 5000 });
+        await loginPage.click();
     }
 }
 

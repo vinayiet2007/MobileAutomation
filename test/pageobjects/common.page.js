@@ -1,4 +1,5 @@
 const { $ } = require('@wdio/globals');
+const helper = require('./helper.page');
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -8,29 +9,32 @@ class CommonPage {
      * define selectors using getter methods
      */
 
-    get menu () {
-        return $('//XCUIElementTypeButton[@name="More-tab-item"]');
-    }
+    // get menu () {
+    //     return $('');
+    // }
 
-    get cartPage(){
-        return $('//XCUIElementTypeButton[@name="Cart-tab-item"]');
-    }
+    // get cartPage(){
+    //     return $('//XCUIElementTypeButton[@name="Cart-tab-item"]');
+    // }
 
-    get catalog(){
-        return $('//XCUIElementTypeButton[@name="Catalog-tab-item"]');
-    }
+    // get catalog(){
+    //     return $('//XCUIElementTypeButton[@name="Catalog-tab-item"]');
+    // }
 
     async openCatalogPage(){
-        await this.catalog.click();
+        const catalogPage = await helper.fetchElement("catalogMenu");
+        await catalogPage.click();
     }
 
     async openMenu(){
-        await (await this.menu).waitForExist({ timeout: 5000 });
-        await this.menu.click();
+        const menu = await helper.fetchElement("menuButton");
+        await (menu).waitForExist({ timeout: 5000 });
+        await menu.click();
     }
 
     async openCartPage(){
-        await this.cartPage.click();
+        const cartPage = await helper.fetchElement("openCartButton");
+        await cartPage.click();
     }   
 }
 

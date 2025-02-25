@@ -1,0 +1,82 @@
+{
+    "addToCartButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Add To Cart']",
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+    },
+    "openCartButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='Cart-tab-item']",
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+    },
+    "totalPrice": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[contains(@value,'Total')]//following-sibling::XCUIElementTypeStaticText[contains(@value,'$')]",
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+    },
+    "totalItems": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[contains(@value,'Total')]//following-sibling::XCUIElementTypeStaticText[contains(@value,'Items')]",
+        "androidLocatorValue": ""
+    },
+    "menuButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='More-tab-item']",
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+    },
+    "loginMenu": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='LogOut-menu-item']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "userNameInput": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='User Name']//following-sibling::XCUIElementTypeOther/XCUIElementTypeTextField",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "passwordInput": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Password']//following-sibling::XCUIElementTypeOther/XCUIElementTypeSecureTextField",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "loginButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='Login']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "autoLoginLink": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='bob@example.com']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "errorText": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Username is required']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "okButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='OK']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "productPageTitle": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='title']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "productPrice": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Price']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "productName": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Product Name' and @label='Flag']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    },
+    "catalogMenu": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='Catalog-tab-item']",
+        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+    }
+}
