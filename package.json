@@ -4,7 +4,8 @@
   "description": "This project is for learning IOS app test automation",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run config/wdio-ios.conf.js"
+    "testIos": "wdio run config/wdio-ios.conf.js",
+    "testAndroid": "wdio run config/wdio-android.conf.js"
   },
   "author": "vinay srivastava",
   "license": "ISC",

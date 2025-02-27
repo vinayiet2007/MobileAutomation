@@ -7,22 +7,22 @@
     "openCartButton": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeButton[@name='Cart-tab-item']",
-        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='cart badge']"
     },
     "totalPrice": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[contains(@value,'Total')]//following-sibling::XCUIElementTypeStaticText[contains(@value,'$')]",
-        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+        "androidLocatorValue": "//android.widget.TextView[@content-desc='total price']"
     },
     "totalItems": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[contains(@value,'Total')]//following-sibling::XCUIElementTypeStaticText[contains(@value,'Items')]",
-        "androidLocatorValue": ""
+        "androidLocatorValue": "//android.widget.TextView[@content-desc='total number']"
     },
     "menuButton": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeButton[@name='More-tab-item']",
-        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Add To Cart button']"
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='open menu']"
     },
     "loginMenu": {
         "locatorType": "xpath",
@@ -42,17 +42,17 @@
     "loginButton": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeButton[@name='Login']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='Login button']"
     },
     "autoLoginLink": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[@name='bob@example.com']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.widget.TextView[@text='bob@example.com']"
     },
     "errorText": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Username is required']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.widget.TextView[@text='Username is required']"
     },
     "okButton": {
         "locatorType": "xpath",
@@ -62,21 +62,36 @@
     "productPageTitle": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[@name='title']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.widget.TextView[@text='Products']"
     },
     "productPrice": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Price']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.widget.TextView[@content-desc='product price']"
     },
     "productName": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeStaticText[@name='Product Name' and @label='Flag']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.widget.TextView[@content-desc='store item text' and @text='Flag']"
     },
     "catalogMenu": {
         "locatorType": "xpath",
         "IosLocatorValue": "//XCUIElementTypeButton[@name='Catalog-tab-item']",
-        "androidLocatorValue": "//android.widget.TextView[@text='Log In']"
+        "androidLocatorValue": "//android.widget.TextView[@text='Catalog']"
+    },
+    "logoutMenu": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='Catalog-tab-item']",
+        "androidLocatorValue": "//android.view.ViewGroup[@content-desc='menu item log out']"
+    },
+    "logoutButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='Catalog-tab-item']",
+        "androidLocatorValue": "//android.widget.Button[@resource-id='android:id/button1']"
+    },
+    "logoutOkButton": {
+        "locatorType": "xpath",
+        "IosLocatorValue": "//XCUIElementTypeButton[@name='Catalog-tab-item']",
+        "androidLocatorValue": "//android.widget.Button[@resource-id='android:id/button1']"
     }
 }

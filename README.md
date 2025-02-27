@@ -1,28 +1,32 @@
 # MobileAutomation
 IOS + APPIUM + ANDROID + JAVASCRIPT + XCODE + WDIO
-#                       ***** IOS ******
+
+#                       ***** Common ******
 ## Installation:
-1. **Xcode**: Install the latest version of Xcode (or update from the App Store).
-2. **Set JAVA_HOME**: Add the following line to your `.zshrc` file to set the `JAVA_HOME` environment variable:
+1. **Set JAVA_HOME**: Add the following line to your `.zshrc` file to set the `JAVA_HOME` environment variable:
     ```sh
     export JAVA_HOME=$(/usr/libexec/java_home)
     ```
-3. **Install Carthage**:
+2. **Install Carthage**:
     ```sh
     brew install carthage
     ```
-4. **Download and Install Appium Inspector**:
+3. **Download and Install Appium Inspector**:
     - [Appium Inspector Releases](https://github.com/appium/appium-inspector/releases)
-    - Confirm "Allow Appium" in System Preferences -> Security & Privacy.
-5. **Install Appium Globally**:
+    - IOS ==> Confirm "Allow Appium" in System Preferences -> Security & Privacy.
+4. **Install Appium Globally**:
     ```sh
     npm install -g appium@next
     ```
-6. **Install XCUITest Driver**:
+
+#                       ***** IOS ******
+## Installation:
+1. **Xcode**: Install the latest version of Xcode (or update from the App Store).
+2. **Install XCUITest Driver**:
     ```sh
     appium driver install xcuitest
     ```
-7. **Run Appium Doctor**:
+3. **Run Appium Doctor**:
     ```sh
     appium-doctor
     ```
@@ -37,6 +41,34 @@ IOS + APPIUM + ANDROID + JAVASCRIPT + XCODE + WDIO
     - If not, set the correct path:
     ```sh
     sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+    ```
+
+#                       ***** ANDROID ******
+## Installation:
+1. **Install Android Studio**:
+    - Download and install Android Studio from [Android Studio](https://developer.android.com/studio).
+2. **Set ANDROID_HOME**:
+    - Add the following lines to your `.zshrc` file to set the `ANDROID_HOME` environment variable:
+    ```sh
+    export ANDROID_HOME=$HOME/Library/Android/sdk
+    export PATH=$PATH:$ANDROID_HOME/emulator
+    export PATH=$PATH:$ANDROID_HOME/tools
+    export PATH=$PATH:$ANDROID_HOME/tools/bin
+    export PATH=$PATH:$ANDROID_HOME/platform-tools
+    ```
+3. **Install and Configure Android Simulator**:
+    - Open Android Studio and create a new AVD (Android Virtual Device).
+    - Copy the name of the AVD (important).
+
+4. **Set the Capabilities for Android in Appium Inspector**:
+    ```json
+    {
+        "platformName": "Android", 
+        "appium:platformVersion": "12",
+        "appium:deviceName": "<AVD name>",
+        "appium:app": "<Your App Path>/MyDemoApp.apk",
+        "appium:automationName": "UIAutomator2"
+    }
     ```
 
 ## How to Run:
@@ -64,13 +96,14 @@ IOS + APPIUM + ANDROID + JAVASCRIPT + XCODE + WDIO
 4. **Run Tests with the Following Command**:
     ```sh
     wdio run config/wdio-ios.conf.js
+    wdio run config/wdio-android.conf.js
     ```
 
 ## Additional Information:
 - **Project Structure**:
-    - [specs](http://_vscodecontentref_/1): Contains the test specifications.
-    - [pageobjects](http://_vscodecontentref_/2): Contains the page object models.
-    - [config](http://_vscodecontentref_/3): Contains the WebdriverIO configuration files.
+    - [specs]: Contains the test specifications.
+    - [pageobjects]: Contains the page object models.
+    - [config]: Contains the WebdriverIO configuration files.
 
 - **Useful Commands**:
     - **Install Dependencies**:
@@ -80,6 +113,7 @@ IOS + APPIUM + ANDROID + JAVASCRIPT + XCODE + WDIO
     - **Run Tests**:
         ```sh
         npx wdio run config/wdio-ios.conf.js
+        npx wdio run config/wdio-android.conf.js
         ```
 
 - **Troubleshooting**:

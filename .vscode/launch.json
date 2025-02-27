@@ -8,7 +8,7 @@
             "type": "node-terminal",
             "request": "launch",
             "name": "debug",
-            "command": "npm run test",
+            "command": "npm run testAndroid",
             "cwd":"${workspaceFolder}"
         }
     ]

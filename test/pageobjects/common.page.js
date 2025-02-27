@@ -10,6 +10,9 @@ class CommonPage {
      */
 
     async openCatalogPage(){
+        if(driver.isAndroid){
+            await this.openMenu();
+        }
         const catalogPage = await helper.fetchElement("catalogMenu");
         await catalogPage.click();
     }

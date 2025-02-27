@@ -31,7 +31,9 @@ class LoginPage {
         const errorText= await helper.fetchElement("errorText");
         const errorMessage = await errorText.getText();
         const okButton= await helper.fetchElement("okButton");
-        await okButton.click();
+        if(driver.isIOS){
+            await okButton.click();
+        }
         return errorMessage;
     }
 
